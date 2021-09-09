@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Plant is it Going to Grow into??" textAlignment="center" lineBreakMode="clip" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5I1-B0-JGY">
+                                <rect key="frame" x="18" y="30" width="284.5" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sprouts" translatesAutoresizingMaskIntoConstraints="NO" id="PDE-z6-OfW">
+                                <rect key="frame" x="13.5" y="56" width="293" height="204"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PDE-z6-OfW" secondAttribute="height" multiplier="293:204" id="9VF-Yn-tsM"/>
+                                    <constraint firstAttribute="width" constant="293" id="Xzc-Vt-yOj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="bIu-rn-idY">
+                                <rect key="frame" x="17.5" y="274" width="285" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5Q-k9-1oQ">
+                                        <rect key="frame" x="101" y="0.0" width="83" height="32.5"/>
+                                        <state key="normal" title="Surprise Me"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="xej-1d-kql">
+                                        <rect key="frame" x="0.0" y="58.5" width="285" height="31.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGW-8W-YxO">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="31.5"/>
+                                                <state key="normal" title="Dandelion"/>
+                                                <connections>
+                                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZBU-dj-yyl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryZ-tP-F50">
+                                                <rect key="frame" x="108" y="0.0" width="69" height="31.5"/>
+                                                <state key="normal" title="Seqouia"/>
+                                                <connections>
+                                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mof-vB-jdK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZD-mC-lLz">
+                                                <rect key="frame" x="216" y="0.0" width="69" height="31.5"/>
+                                                <state key="normal" title="Maple"/>
+                                                <connections>
+                                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fl-rT-Hfg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xej-1d-kql" secondAttribute="height" multiplier="136:15" id="0r1-H4-38f"/>
+                                            <constraint firstItem="ryZ-tP-F50" firstAttribute="width" secondItem="VGW-8W-YxO" secondAttribute="width" id="GpN-uY-6Pp"/>
+                                            <constraint firstItem="OZD-mC-lLz" firstAttribute="width" secondItem="VGW-8W-YxO" secondAttribute="width" id="gyy-zZ-TyQ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bIu-rn-idY" secondAttribute="height" multiplier="136:43" id="7NK-08-thq"/>
+                                    <constraint firstItem="xej-1d-kql" firstAttribute="centerX" secondItem="bIu-rn-idY" secondAttribute="centerX" id="yy6-3U-j5p"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.64653629059999995" green="0.85924285649999999" blue="0.54108875990000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="PDE-z6-OfW" firstAttribute="top" secondItem="5I1-B0-JGY" secondAttribute="bottom" constant="7.5" id="8cK-e1-C8J"/>
+                            <constraint firstItem="bIu-rn-idY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="35" id="I2F-UQ-sbv"/>
+                            <constraint firstItem="bIu-rn-idY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XSM-6q-JI3"/>
+                            <constraint firstItem="5I1-B0-JGY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zen-7g-s3s"/>
+                            <constraint firstItem="PDE-z6-OfW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hAe-YX-9ou"/>
+                            <constraint firstItem="bIu-rn-idY" firstAttribute="top" secondItem="PDE-z6-OfW" secondAttribute="bottom" constant="14" id="lmK-LE-dmp"/>
+                            <constraint firstItem="5I1-B0-JGY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="v3Z-By-rnL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dis" destination="5I1-B0-JGY" id="LXX-Pn-iEr"/>
+                        <outlet property="plantImage" destination="PDE-z6-OfW" id="tTz-4v-qkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="113.02816901408451"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sprouts" width="400" height="267"/>
+    </resources>
+</document>
