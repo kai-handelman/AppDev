@@ -34,7 +34,7 @@ class ResultPageController: UIViewController {
             initialPower = Float(1.5) * initialPower;
         }
         var matchUpMultiplyer = typeCalc.getTypeChart(receiveMon.type1!,aType)
-        
+//        chanceOfKo.text = String(matchUpMultiplyer) + ", " + String(receiveMon.type1!-1) + ", " + String(1 << (aType-1))
         if(receiveMon.type2! != 0){
             matchUpMultiplyer = matchUpMultiplyer * typeCalc.getTypeChart(receiveMon.type2!,aType)
         }
@@ -43,21 +43,22 @@ class ResultPageController: UIViewController {
 //        Caluculate Super Effectiveness
         let upperBound:Int = Int(initialPower)
         let lowerBound:Int = Int(initialPower * Float(0.85))
-        let KOChance:Float = Float(receiveMon.stat1!)/initialPower
+//        let KOChance:Float = Float(receiveMon.stat1!)/initialPower
         
         
 //        damageRange.text = String(lowerBound) + " ~ " + String(upperBound) + ""
-        damageRange.text = String(100 * Float(lowerBound)/Float(receiveMon.stat1!)) + "% ~ " + String(100 * Float(upperBound)/Float(receiveMon.stat1!)) + "%"
-        critDamageRange.text = String(100 * (Float(lowerBound) * 1.5)/Float(receiveMon.stat1!)) + "% ~ " + String(100 * (Float(upperBound) * 1.5)/Float(receiveMon.stat1!)) + " %"
-        
+        damageRange.text = String(round(100 * Float(lowerBound)/Float(receiveMon.stat1!)*100)/100) + "% ~ " + String(round(100 * Float(upperBound)/Float(receiveMon.stat1!)*100)/100) + "%"
+        critDamageRange.text = String(round(100 * (Float(lowerBound) * 1.5)/Float(receiveMon.stat1!)*100)/100) + "% ~ " + String(round(100 * (Float(upperBound) * 1.5)/Float(receiveMon.stat1!)*100)/100) + " %"
+        chanceOfKo.text = String(round(matchUpMultiplyer)) + "x"
+       
 //        Need to Fix
-        if (receiveMon.stat1! - lowerBound < 1) {
-            chanceOfKo.text = "100%"
-        }else if (receiveMon.stat1! - upperBound > 0){
-            chanceOfKo.text = "0%"
-        }else{
-            chanceOfKo.text = String(100 - 100*((KOChance - 0.85) * 100)/16) + "%"
-        }
+//        if (receiveMon.stat1! - lowerBound < 1) {
+//            chanceOfKo.text = "100%"
+//        }else if (receiveMon.stat1! - upperBound > 0){
+//            chanceOfKo.text = "0%"
+//        }else{
+//            chanceOfKo.text = String(100 - 100*((KOChance - 0.85) * 100)/16) + "%"
+//        }
     }
 
     /*

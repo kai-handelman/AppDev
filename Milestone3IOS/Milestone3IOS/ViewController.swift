@@ -80,7 +80,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             resultVC.receiveMon = receiveMon
             resultVC.attackMon = attackMon
             if let text = attackBP.text, text.isEmpty{
-                resultVC.attackBasePower = 120
+                resultVC.attackBasePower = 100
             }else{
                 resultVC.attackBasePower = Int(attackBP.text!)!
             }

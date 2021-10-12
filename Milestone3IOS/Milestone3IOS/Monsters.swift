@@ -34,7 +34,10 @@ class Mons{
         if(t1 == 0 && t2 != 0){
             type1 = t2
             type2 = 0
-        }else{
+        }else if(t1 != 0 && t2 != 0){
+        
+        }
+        else{
             type1 = t1;
             type2 = t2;
         }
