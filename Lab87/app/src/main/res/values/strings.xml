@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lab87</string>
+    <string name="Burger">Burger</string>
+    <string name="HotDog">HotDog</string>
+    <string name="ToGoOption">To Go?</string>
+    <string name="OrderButton">Order!</string>
+    <string name="orderString">Order: Currently None</string>
+
+    <string-array name="nums">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+
+    </string-array>
+</resources>
