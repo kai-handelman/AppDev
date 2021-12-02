@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab_8</string>
+    <string name="buttonText">See More Info</string>
+    <string name="returnButtonText">Return to Main</string>
+    <string name="feedbackToggle">Approve of the Food?</string>
+    <string name="urlButtonClick">See Website!</string>
+    <string-array name="foodPlaces">
+        <item>McDonald\'s</item>
+        <item>Wendy\'s</item>
+        <item>Taco Bell</item>
+        <item>Home</item>
+    </string-array>
+</resources>
