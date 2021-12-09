@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editReceivingMon">
+
+    <EditText
+        android:id="@+id/recDefStat"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="-14dp"
+        android:ems="10"
+        android:hint="@string/defStatHint"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/defStatTitle"
+        app:layout_constraintStart_toEndOf="@+id/defStatTitle"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/defStatTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/defStat"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hpStatTitle" />
+
+    <TextView
+        android:id="@+id/topTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/editRecMonTitle"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recType1Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/attackType1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defStatTitle" />
+
+    <TextView
+        android:id="@+id/attType1Title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/attackType2"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recType1Title" />
+
+    <TextView
+        android:id="@+id/recItemTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/recItem"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/topTitle2" />
+
+    <Spinner
+        android:id="@+id/receiveType1"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-12dp"
+        android:entries="@array/types"
+        app:layout_constraintStart_toEndOf="@+id/recType1Title"
+        app:layout_constraintTop_toTopOf="@+id/recType1Title"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Spinner
+        android:id="@+id/receiveType2"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-12dp"
+        android:entries="@array/types"
+        app:layout_constraintStart_toEndOf="@+id/attType1Title4"
+        app:layout_constraintTop_toTopOf="@+id/attType1Title4" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topTitle2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/recHpStat"
+        android:layout_width="119dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="-14dp"
+        android:ems="10"
+        android:hint="@string/hpStatHint"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hpStatTitle"
+        app:layout_constraintStart_toEndOf="@+id/hpStatTitle"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/hpStatTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/hpStat"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topTitle2" />
+
+    <Button
+        android:id="@+id/finishedEditingButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:onClick="returnBackToMain"
+        android:text="@string/returnMainButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view4" />
+
+    <RadioGroup
+        android:id="@+id/receivingItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:checkedButton="@id/NoItems"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/recItemTitle2">
+
+        <RadioButton
+            android:id="@+id/NoItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemEdit"
+            android:text="@string/itemNone" />
+
+        <RadioButton
+            android:id="@+id/ItemEviolite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemEdit"
+            android:text="@string/itemEvi" />
+
+        <RadioButton
+            android:id="@+id/ItemBerry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemEdit"
+            android:text="@string/itemBerry" />
+
+        <RadioButton
+            android:id="@+id/ItemAV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemEdit"
+            android:text="@string/itemAV" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

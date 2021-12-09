@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditAttackMon">
+
+    <TextView
+        android:id="@+id/topTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/editAttMonTitle"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/attType1Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/attackType1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attackStatInput" />
+
+    <TextView
+        android:id="@+id/attType1Title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/attackType2"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attType1Title" />
+
+    <TextView
+        android:id="@+id/attItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/attackItem"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/topTitle" />
+
+    <Spinner
+        android:id="@+id/attackType1"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-12dp"
+        android:entries="@array/types"
+        app:layout_constraintStart_toEndOf="@+id/attType1Title"
+        app:layout_constraintTop_toTopOf="@+id/attType1Title"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Spinner
+        android:id="@+id/attackType2"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-12dp"
+        android:entries="@array/types"
+        app:layout_constraintStart_toEndOf="@+id/attType1Title2"
+        app:layout_constraintTop_toTopOf="@+id/attType1Title2" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topTitle" />
+
+    <EditText
+        android:id="@+id/attackStatInput"
+        android:layout_width="119dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="-14dp"
+        android:ems="10"
+        android:hint="@string/attackStatHint"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/attackStatTitle"
+        app:layout_constraintStart_toEndOf="@+id/attackStatTitle"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/attackStatTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/attStat"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topTitle" />
+
+    <Button
+        android:id="@+id/finishedEditingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="returnBackToMain"
+        android:text="@string/returnMainButtonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/attackItems" />
+
+    <RadioGroup
+        android:id="@+id/attackItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/attItemTitle">
+
+        <RadioButton
+            android:id="@+id/NoItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemEdit"
+            android:text="@string/itemNone" />
+
+        <RadioButton
+            android:id="@+id/ItemLifeOrb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemEdit"
+            android:text="@string/itemOrb" />
+
+        <RadioButton
+            android:id="@+id/ItemChoiced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemEdit"
+            android:text="@string/itemChoiced" />
+
+        <RadioButton
+            android:id="@+id/ItemGem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="itemEdit"
+            android:text="@string/itemGem" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

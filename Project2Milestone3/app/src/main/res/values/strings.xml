@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Pokemon Damage Calculator</string>
+    <string name="attMonTitle">Attacking Pokemon</string>
+    <string name="attStat">Attack Stat: </string>
+    <string name="attackType1">Type 1: </string>
+    <string name="attackType2">Type 2: </string>
+    <string name="attackItem">Item: </string>
+    <string name="recMonTitle">Receiving Pokemon</string>
+    <string name="hpStat">HP: </string>
+    <string name="defStat">Defense Stat: </string>
+    <string name="recType1">Type 1: </string>
+    <string name="recType2">Type 2: </string>
+    <string name="recItem">Item: </string>
+    <string name="attackTitle">Attack Info:</string>
+    <string name="basePowerHint">Enter Base Power</string>
+    <string name="bpText">Base Power: </string>
+    <string name="moveType">Type: </string>
+    <string name="calcButtonText">Calculate!</string>
+    <string name="editButtonText">Edit</string>
+    <string name="returnMainButtonText"> Return To Main</string>
+    <string name="attackStatHint">Enter Attack Stat</string>
+    <string name="itemNone"> None </string>
+    <string name="itemChoiced"> Choiced </string>
+    <string name="itemGem"> Gem </string>
+    <string name="itemOrb"> Life Orb </string>
+    <string name="editAttMonTitle">Edit Attacking Pokemon</string>
+    <string name="editRecMonTitle">Edit Receiving Pokemon</string>
+    <string name="hpStatHint">Enter HP</string>
+    <string name="defStatHint">Enter Defensive Stat</string>
+    <string name="itemEvi"> Eviolite </string>
+    <string name="itemBerry"> Berry </string>
+    <string name="itemAV"> Assault Vest </string>
+    <string name="physicalSpecialTitle">Is Special?</string>
+
+    <string-array name="types">
+        <item>Empty</item>
+        <item>Bug</item>
+        <item>Dark</item>
+        <item>Dragon</item>
+        <item>Electric</item>
+        <item>Fairy</item>
+        <item>Fighting</item>
+        <item>Fire</item>
+        <item>Flying</item>
+        <item>Ghost</item>
+        <item>Grass</item>
+        <item>Ground</item>
+        <item>Ice</item>
+        <item>Normal</item>
+        <item>Poison</item>
+        <item>Psychic</item>
+        <item>Rock</item>
+        <item>Steel</item>
+        <item>Water</item>
+    </string-array>
+
+    <string-array name="attackingItemList">
+        <item>None</item>
+        <item>Life Orb</item>
+        <item>Choiced</item>
+        <item>Gem</item>
+    </string-array>
+
+    <string-array name="receivingItemList">
+        <item>None</item>
+        <item>Eviolite</item>
+        <item>Berry</item>
+        <item>Assault Vest</item>
+    </string-array>
+
+    <string name="title_activity_finalize_info_page">finalizeInfoPage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Multihit">Numbers of Times Hit:</string>
+    <string name="hitOne"> 1 </string>
+    <string name="hitTwo"> 2 </string>
+    <string name="hitThree"> 3 </string>
+    <string name="hitFour"> 4 </string>
+    <string name="hitFive"> 5 </string>
+    <string name="finalizeInfoTitle">Finalize Calcs Information</string>
+    <string name="weatherNone"> None </string>
+    <string name="weatherSun"> Sun </string>
+    <string name="weatherRain"> Rain </string>
+    <string name="weatherSand"> Sandstorm </string>
+    <string name="returnMainButton"><![CDATA[< Return To Main]]></string>
+    <string name="getRangeButtonText"><![CDATA[Calculate and Get Range! >]]></string>
+    <string name="weatherTitle">Weather:</string>
+    <string name="dmgRangeTitle">Damage Range: </string>
+    <string name="rangeTitle">Ranges</string>
+    <string name="critDamageRangeTitle">Crit Damage Range:</string>
+    <string name="retButtonText">Done</string>
+</resources>

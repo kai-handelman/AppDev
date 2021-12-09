@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project2milestone3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project2Milestone3">
+        <activity
+            android:name=".rangePage"
+            android:exported="false" />
+        <activity
+            android:name=".finalizeCalcs"
+            android:exported="false" />
+        <activity
+            android:name=".finalizeInfoPage"
+            android:exported="false"
+            android:label="@string/title_activity_finalize_info_page"
+            android:theme="@style/Theme.Project2Milestone3.NoActionBar" />
+        <activity
+            android:name=".editReceivingMon"
+            android:exported="false" />
+        <activity
+            android:name=".EditAttackMon"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
