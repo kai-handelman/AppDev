@@ -72,7 +72,6 @@ class rangePage : AppCompatActivity() {
         if(mon1.item == 1){
             matchUpMultiplier *= 1.3f
         }
-        findViewById<TextView>(R.id.topTitle5).text = matchUpMultiplier.toString()
         initialPower = floor(initialPower * matchUpMultiplier)
 
         var upperBound: Float = floor(initialPower*hitCount)
